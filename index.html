@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            min-height: 1300px;
+            background-color: #8BC6EC;
+            background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .card {
+            width: 360px;
+            height: 550px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 20px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+
+        .card img {
+            height: 55%;
+            border-radius: 10px;
+        }
+
+        .card h2 {
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        .card2 {
+            width: 360px;
+            height: 550px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+        }
+
+        .card2 img {
+            width: 100%;
+            height: 150px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+
+        .textbox {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 80%;
+            text-align: center;
+        }
+
+        #amount {
+            width: 80%;
+            height: 10%;
+            background-color: rgb(195, 177, 177);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .leftbox {
+            height: 100%;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        #imgbox img {
+            height: 3rem;
+            width: 2.8rem;
+        }
+
+        #payment {
+            width: 80%;
+            height: 10%;
+            background-color: rgb(34, 34, 130);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+
+        .cancel a {
+            text-decoration: none;
+            color: grey;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .card3 {
+            width: 1000px;
+            height: 580px;
+            background-color: white;
+            display: flex;
+            flex-direction: row-reverse;
+            align-content: space-around;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+
+        #leftbox1 {
+            height: 100%;
+            width: 50%;
+            background-color: #100D54;
+            display: flex;
+            align-content: center;
+        }
+
+        #rightbox1 {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center;*/
+            justify-content: center;
+            background-color: #450845;
+            padding: 25px;
+            gap: 65px;
+            color: #fff;
+        }
+
+        #leftbox1>img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .level-box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around
+        }
+
+        #rightbox1 h1 {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 4.5rem;
+        }
+
+        #rightbox1>p {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .level-box h3 {
+            font-weight: bolder;
+            font-size: larger;
+            font-size: 1.5rem;
+        }
+
+        .level-box p {
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="Github-qr.png" alt="">
+
+            <h2>Check out my Github account by scanning the qr code.</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, voluptatum adipisci nostrum harum
+                reprehenderit aliquam perspiciatis quasi consequuntur perferendis iste!</p>
+        </div>
+        <div class="card2">
+            <img src="web dev.jpg" alt="">
+
+            <div class="textbox">
+                <h2>Order Summary</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisi elit. Quae, aliquid!</p>
+            </div>
+
+            <div id="amount">
+                <div class="leftbox">
+                    <div id="imgbox">
+                        <img src="undraw_search_app_oso2.svg" alt="">
+                    </div>
+                    <div id="textamountbox">
+                        <p>amount</p>
+                        <p>$99.9/year</p>
+                    </div>
+
+                </div>
+                <div id="rightbox">
+                    <a href="#">Change</a>
+                </div>
+            </div>
+
+            <button id="payment">
+                Proceed Further
+            </button>
+
+            <div class="cancel">
+                <a href="#">Cancel Order</a>
+            </div>
+        </div>
+        <div class="card3">
+            <div id="leftbox1">
+                <img src="wallpaperflare.com_wallpaper.jpg" alt="">
+            </div>
+            <div id="rightbox1">
+
+                <h1>Skills I know</h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sint error rerum corrupti atque
+                    voluptatum adipisci molestiae labore molestias natus qui mollitia incidunt ipsa officia, dicta
+                    inventore aliquid? Eaque quos porro ducimus error ratione, quia nulla, neque dolor sit voluptas quis
+                    obcaecati vitae nisi praesentium deserunt voluptate possimus cupiditate esse.</p>
+
+                <div class="level-box">
+                    <div class="html">
+                        <h3>HTML</h3>
+                        <P>Expert</P>
+                    </div>
+                    <div class="css">
+                        <h3>CSS</h3>
+                        <p>Expert</p>
+                    </div>
+                    <div class="js">
+                        <h3>JavaScript</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
